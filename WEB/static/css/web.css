@@ -1,0 +1,430 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.active {
+    color: red;
+  }
+  
+main {
+    height: 100vh;
+    width: 100vh;
+}
+
+li {
+    font-size: x-large;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1vh;
+    margin: 4%;
+}
+
+li a {
+    text-decoration: none;
+}
+
+  /* Style the nav element */
+  
+nav {    
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 0.3vw #F49D1A solid;
+    height: 23vh;
+}
+  
+  /* Style the h2 element inside the nav element */
+  nav h1 h2 {
+    font-size: xx-large;
+    position: absolute;
+    margin: 2%;
+  }
+  
+  /* Style the ul element inside the nav element */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+  }
+  
+  /* Style the li element inside the ul element */
+  nav li {
+    padding: 2vh;
+    margin-top: 0%;
+    
+
+  }
+  
+  /* Style the a element inside the li element */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  footer {
+    background-color: #333;
+    border-top: 0.4vw #F49D1A solid;
+    color: #fff;
+    font-size: 14px;
+    padding: 20px;
+  }
+  
+  footer .contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  footer img {
+    width: 80px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 10px;
+  }
+  
+  footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /************home*************/
+  .containAll{
+    display: flex;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    background-color: #FBFACD;
+
+  }
+  .box{
+    font-size: x-large;
+    margin-top: 10%; 
+    margin-left: 10%;
+    width: 90%;
+  }
+    
+.LogIn{
+    background-color: #F5D5AE;
+    padding: 1%;
+    width: 18vw;
+    /* height: 60%; */
+    position: fixed;
+    right: 3%;
+    top: 26%;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogIn h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.LogIn *{
+    margin: 5%;
+    background-color: #F5D5AE;
+}
+
+.LogIn input{
+    width: 80%;
+    padding: 3%;
+    margin-top: 1%;
+   background-color: white;
+}
+
+.LogIn button{
+    width: 35%;
+    padding: 2%;
+    margin-top: 10%;
+    border-radius:10%;
+    background-color: #F49D1A;
+}
+
+.button :hover{   
+    background-color:gray
+}
+
+.LogIn label{
+    padding: 0%;
+    margin-top: 0%;
+}
+
+/**************Sign Up***********/
+.SignUp{    
+    display: flex;  
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background-color:#FBFACD;
+}
+
+.container{
+    width: 100%;
+    max-width: 100vh;
+    background-color: #F5D5AE;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black ;   
+}
+
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 2px;
+    color: black;
+    border-bottom: solid 2px #333;
+}
+
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.user-input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 1%;
+}
+
+.user-input-box label{
+    width: 95%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 5px 0 ;
+}
+
+.user-input-box input{
+    height: 30px;
+    width: 95%;
+    border-radius: 7px;
+    outline: none;
+    border: 2px solid grey;
+    padding: 0 10px;
+}
+
+.gender-title{
+    color: black;
+    font-size: 24px;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+.gender-category{
+    margin: 15px 0;
+    color: black;
+}
+
+.gender-category label{
+    padding: 0 20px 0 5px;
+}  
+
+.form-submit-btn{
+    display: flex;
+    justify-content: end;
+    align-self: start;
+    margin: 1px;
+    /* width: 106vh; */
+    height: 5vh; 
+    transition-duration: 0.4s;
+}
+
+.Sign-btn{    
+    width: 22vh;
+    height: 5vh; 
+    background-color: #F49D1A; 
+}
+
+.Sign-btn:hover{
+    background-color: rgb(194, 193, 193);
+}
+
+/***************Search*************/
+@keyframes scaleUpDown {
+    from {
+      transform: scale(1);
+    }
+   
+    to {
+      transform: scale(1.3);
+    }
+  }
+  
+  .food img:hover{
+    animation: scaleUpDown 1s ;
+  }
+
+.Search{
+    display: flex;  
+    height: 100vh;
+    background-color:#FBFACD;
+}
+.general-search{
+    position: absolute;
+    margin-top: 1vh;
+    height: 6vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color:#FBFACD; */
+}
+
+#search-text{
+    height: 6vh;
+    width: 50vh; 
+}
+
+#search-btn{
+    height: 6vh;
+    width: 13vh; 
+    background-color: #F49D1A;
+}
+
+.food img{
+    height: 65%;
+    width:62%;   
+}
+.food a{
+    text-decoration: none;
+}
+
+.food{
+    width: 62vh;
+    height: 55vh;  
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.4%
+}
+
+.food-form{
+    margin: 10vh;
+    height: 65vh;
+    max-width: 62vh;
+    background-color: #F5D5AE;
+    padding: 10px;
+    border-radius: 10px;
+    border: 3px solid black ;   
+}
+
+.costum-form{
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%;
+    height: 62vh;
+    max-width: 42%;
+    padding: 40px;
+}
+
+
+.costum{
+    padding: 2px;
+}
+
+.costum select{
+    margin: 0.5vh;
+    width: 40vh;
+    height: 5vh;  
+}
+
+#costum-btn{
+   margin: 0.5vh;
+    width: 40vh;
+    height: 5vh; 
+    background-color: #F49D1A;
+}
+.costum button :hover{
+    background-color: rgba(169, 169, 169, 0.444);
+
+ }
+
+#change-btn{
+    width: 20vh;
+    height: 20px;
+}
+
+.general-search button :hover{
+    background-color: rgba(169, 169, 169, 0.444);
+}
+
+.Location button :hover{
+    background-color: rgba(169, 169, 169, 0.444);
+}
+
+/*****************Result**************/
+.result{
+    height: 100vh;
+    background-color:#FBFACD;
+}
+
+.restaurant-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  margin: 1vh;
+  margin-left: 12vh;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+.boxA{
+    display: flex;
+}
+.boxB{
+    display: flex;
+}
+.boxC{
+    display: flex;
+}
+
+.restaurant-card img {
+  width: 15%;
+  height: 70px;
+}
+
+.restaurant-card h2 {
+  margin: 10px;
+}
+
+.restaurant-card p {
+  margin: 10px;
+}
+
+
+/* Style for screens that are less than or equal to 768 pixels wide
+@media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    nav li {
+      margin-top: 10px;
+    }
+  
+    .LogIn {
+      width: 100%;
+    }
+  }
+  
+   Style for screens that are less than or equal to 480 pixels wide 
+  @media (max-width: 200) {
+    nav h2 h3 {
+      font-size: x-large;
+    }
+  
+    nav li {
+      font-size: large;
+    }
+  } */
+   
